@@ -1,0 +1,6 @@
+option java_package = "net.lunikon.akka.persistence.serialization";
+option optimize_for = SPEED;
+
+message AccountMessage {
+	required int64 balance = 1;
+}
