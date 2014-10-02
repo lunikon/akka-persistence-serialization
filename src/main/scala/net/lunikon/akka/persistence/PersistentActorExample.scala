@@ -15,6 +15,7 @@ object PersistentActorExample extends App {
   persistentActor ! Book(-30)
   persistentActor ! "print"
 
-  Thread.sleep(1000)
+  Thread.sleep(5000)
   system.shutdown()
+  system.awaitTermination()
 }
